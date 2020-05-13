@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 
 import App from "./components/app/app.jsx";
 
+import questions from "./mocks/questions.js";
+
 const settings = {
   gameTime: 5,
   errorCount: 3,
@@ -12,6 +14,7 @@ ReactDOM.render(
     <App
       errorCount={settings.errorCount}
       gameTime={settings.gameTime}
+      questions={questions}
     />,
     document.querySelector(`#root`)
 );
